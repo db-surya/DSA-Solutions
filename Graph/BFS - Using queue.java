@@ -25,3 +25,10 @@ class Solution {
         return result;
     }
 }
+
+/*Notes
+ * 1. Here marking the child as visited before adding to the queue is important because 
+ * that child can be visited by someone else again and traverse again which leads to wrong ans
+ * 
+ * 
+ */
