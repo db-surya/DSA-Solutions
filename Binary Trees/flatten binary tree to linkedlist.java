@@ -13,3 +13,7 @@ class Solution {
         flattenTree(root);
     }
 }
+
+/* Notes 
+ * Here declaring the prev as global is important or it won't work
+*/
