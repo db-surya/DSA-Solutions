@@ -20,3 +20,28 @@ class Solution {
         return image;
     }
 }
+
+//Below is without extra matrix and changing it inplace
+//Look at if statement - having a doubt there how can there be two values at same index at once?
+
+class Solution {
+    public void dfs(int[][]image, int sr, int sc, int[] rowDirections, int[] colDirections,int color, int initialColor){
+        image[sr][sc] = color;
+        for(int i=0;i<4;i++){
+            int row = sr + rowDirections[i];
+            int col = sc + colDirections[i];
+            int m = image.length;
+            int n = image[0].length;
+            if(row >= 0 && col >=0 && row<m && col<n && image[row][col]==initialColor && image[row][col]!=color){
+                dfs(image,row,col,rowDirections,colDirections,color,initialColor);
+            }
+        }
+    }
+    public int[][] floodFill(int[][] image, int sr, int sc, int color) {
+        int initialColor = image[sr][sc];
+        int[] rowDirections = new int[]{-1,0,1,0};
+        int[] colDirections = new int[]{0,1,0,-1};
+        dfs(image,sr,sc,rowDirections,colDirections,color,initialColor);
+        return image;
+    }
+}
