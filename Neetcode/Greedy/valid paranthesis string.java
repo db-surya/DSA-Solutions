@@ -18,3 +18,9 @@ class Solution {
         return min==0;
     }
 }
+
+/*
+ * Since dealing with only one paranthesis we can go with count technique
+ * if at any point min goes less than zero means we can make it 0
+ * but if max goes less than 0 then it's a problem
+ */
