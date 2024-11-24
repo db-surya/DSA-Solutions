@@ -20,3 +20,9 @@ class Solution {
         return fleet;
     }
 }
+
+/* Slightly difficult to grasp but easy
+ * Calculate the time taken for each car to reach destination
+ * Begin with the position nearer to the destination
+ * If that guy is slow everyone should form a fleet with him that's the core logic
+ */
