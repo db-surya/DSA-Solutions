@@ -1,3 +1,4 @@
+
 public class Solution {
     public int solve(int[] A, int B) {
         HashMap<Integer,Integer>map = new HashMap<>();
