@@ -54,3 +54,8 @@ class Solution {
         return result;
     }
 }
+
+/*
+ * Why we need morris inorder traversal?
+ * Other inorder traversals need o(h) auxillary space to traverse and would be difficult for very deep skewed trees
+ */
