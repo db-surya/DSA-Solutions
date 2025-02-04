@@ -10,7 +10,9 @@ class Solution {
             sign = s.charAt(i++)=='-'?-1:1;
         while(i<s.length() && s.charAt(i)>='0' && s.charAt(i)<='9')
         {
-                if (base > Integer.MAX_VALUE / 10 || (base == Integer.MAX_VALUE / 10 && s.charAt(i) - '0' > Integer.MAX_VALUE % 10))
+                if (base > Integer.MAX_VALUE / 10 || 
+                (base == Integer.MAX_VALUE / 10 && s.charAt(i) - '0' > 
+                Integer.MAX_VALUE % 10))
                 {
                     return sign == -1? Integer.MIN_VALUE : Integer.MAX_VALUE;
                 }

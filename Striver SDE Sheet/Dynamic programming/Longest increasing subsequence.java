@@ -1,4 +1,4 @@
-class Solution {
+  class Solution {
     public int LIS(int index, int prevIndex, int[] nums, int[][]dp, int N){
         if(index == N) return 0;
         if(dp[index][prevIndex+1]!=-1) return dp[index][prevIndex+1];
